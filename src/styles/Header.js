@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native';
+import Colors from '../constants/colors';
 
 const style = StyleSheet.create({
     header: {
         width: '100%',
         height: 90,
         paddingTop: 36,
-        backgroundColor: '#f7287b',
+        backgroundColor: Colors.primary, 
         alignItems: 'center',
         justifyContent: 'center'
     },
