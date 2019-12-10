@@ -1,9 +1,9 @@
 {
-  "devToolsPort": 19003,
-  "expoServerPort": 19004,
-  "packagerPort": 19005,
-  "packagerPid": 2755,
-  "expoServerNgrokUrl": "https://zv-z27.anonymous.rn-game.exp.direct",
-  "packagerNgrokUrl": "https://packager.zv-z27.anonymous.rn-game.exp.direct",
-  "ngrokPid": 2781
+  "devToolsPort": 19002,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 29559,
+  "expoServerNgrokUrl": "https://4r-h3a.anonymous.rn-game.exp.direct",
+  "packagerNgrokUrl": "https://packager.4r-h3a.anonymous.rn-game.exp.direct",
+  "ngrokPid": 29624
 }

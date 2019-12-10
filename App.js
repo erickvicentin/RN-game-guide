@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import style from './styles/Main';
-import Header from './components/Header';
-import StartScreen from './screens/StartScreen';
+import { View } from 'react-native';
+import style from './src/styles/Main';
+import Header from './src/components/Header';
+import StartScreen from './src/screens/StartScreen';
 
 export default function App() {
 
@@ -13,7 +13,4 @@ export default function App() {
     </View>
   );
 
-};
-
-
-
+}

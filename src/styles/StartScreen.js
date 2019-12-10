@@ -13,21 +13,13 @@ const style = StyleSheet.create ({
         paddingHorizontal: 15   
     },
     button: {
-        width: '40%'
+        width: 95
     },
     inputContainer: {
         width: 300,
         maxWidth: '80%',
         alignItems: 'center',
-        shadowColor: 'black',
-        shadowOffset: { width: 0 , height: 2 },
-        shadowRadius: 6,
-        shadowOpacity: 0.26,
-        backgroundColor: 'white',
-        elevation: 10,
-        padding: 20,
-        borderRadius: 10,
-
+        
     },
     title: {
         fontSize: 20,
@@ -37,6 +29,7 @@ const style = StyleSheet.create ({
         width: '80%',
         marginBottom: 20,
         textAlign: 'center',
+        marginVertical: 20
     }
 });
 

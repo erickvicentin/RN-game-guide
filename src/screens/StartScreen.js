@@ -1,26 +1,27 @@
 import React from 'react';
-import { View, Text, TextInput, Button   } from "react-native";
+import { View, Text, TextInput, Button   } from 'react-native';
 import style from '../styles/StartScreen';
+import Card from '../components/Card';
 
 const StartScreen = props => {
     return (
         <View style={style.screen}>
-            <Text style={style.title}>Comenzar un nuevo juego!</Text>
-            <View style={style.inputContainer}>
+            <Text style={style.title}>'Pantalla comenzar'</Text>
+            <Card style={style.inputContainer}>   
                 <Text>Seleccione un numero</Text>
-                <TextInput style={style.inputText}/>
+                <TextInput style={style.inputText} placeholder='Ingrese un numero'/>
                 <View style={style.buttonContainer}>
                     
                     <View style={style.button}>
-                        <Button title="Reiniciar" color='red' onPress={() => {}}/>
+                     <Button title="Reiniciar" color='black' onPress={() => {}} />
                     </View>
-                    
+
                     <View style={style.button}>
-                        <Button title="Confirmar" onPress={() => {}}/>
+                    <Button title="Aceptar" color='black' onPress={() => {}} />
                     </View>
 
                 </View>
-            </View>
+            </Card>
         </View>
     );
 };

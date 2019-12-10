@@ -10,7 +10,7 @@ const style = StyleSheet.create ({
         elevation: 10,
         padding: 20,
         borderRadius: 10,
-    }
+    },
 });
 
 export default style;
