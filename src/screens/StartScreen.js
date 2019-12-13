@@ -6,8 +6,16 @@ import Colors from '../constants/colors';
 import Input from '../components/Input';
 
 const StartScreen = props => {
+
+    const [enteredValue, setEnteredValue] = useState ('');
+    
+    const numberInputHandler = inputText => {
+        setEnteredValue(inputText.replace(/[^0-9]/g,''));
+    };
+
+
     return (
-        <View style={style.screen}>
+        <View style={style.screen}> 
             
             <Text style={style.title}>Comenzar el juego</Text>
 
@@ -22,6 +30,8 @@ const StartScreen = props => {
                     autoCorrect = { false }
                     keyboardType = "number-pad"
                     maxLength={2}
+                    onChangeText={numberInputHandler}
+                    value={enteredValue}
                     />
                
                  <View style={style.buttonContainer}>
