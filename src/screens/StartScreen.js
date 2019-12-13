@@ -4,7 +4,7 @@ import style from '../styles/StartScreen';
 import Card from '../components/Card';
 import Colors from '../constants/colors';
 import Input from '../components/Input';
-import { parse } from 'qs';
+import NumberContainer from '../components/NumberContainer';
 
 const StartScreen = props => {
 
@@ -37,7 +37,12 @@ const StartScreen = props => {
     let confirmedOutput;
 
     if (confirmed) {
-        confirmedOutput= <Text>Chosen Number: {selectedNumber}</Text>
+        confirmedOutput= 
+        <Card style={style.summaryContainer}>
+            <Text>Seleccionaste el numero</Text> 
+            <NumberContainer>{selectedNumber}</NumberContainer>
+            <Button title='Comenzar Juego' />
+        </Card>
     };
 
     return (

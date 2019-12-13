@@ -28,6 +28,9 @@ const style = StyleSheet.create ({
     input: {
         width: 50,
         textAlign: 'center'
+    },
+    summaryContainer: {
+        marginTop: 20
     }
 });
 
