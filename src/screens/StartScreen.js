@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, Button   } from 'react-native';
 import style from '../styles/StartScreen';
 import Card from '../components/Card';
