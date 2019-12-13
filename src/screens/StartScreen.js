@@ -30,8 +30,9 @@ const StartScreen = props => {
             );
         }
         setConfirmed(true);
-        setSelectedNumber(enteredValue);
+        setSelectedNumber(chosenNumber);
         setEnteredValue('');
+        Keyboard.dismiss();
     };
 
     let confirmedOutput;

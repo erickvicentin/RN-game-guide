@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <View style={style.screen}>
-      <Header title='Guess a Number Game'/>
+      <Header title='ADIVINA EL NUMERO'/>
       <StartScreen/>
     </View>
   );
