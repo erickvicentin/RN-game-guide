@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Button   } from 'react-native';
+import { View, Text, Button, TouchableWithoutFeedback, Keyboard  } from 'react-native';
 import style from '../styles/StartScreen';
 import Card from '../components/Card';
 import Colors from '../constants/colors';
@@ -15,40 +15,42 @@ const StartScreen = props => {
 
 
     return (
-        <View style={style.screen}> 
-            
-            <Text style={style.title}>Comenzar el juego</Text>
-
-            <Card style={style.inputContainer}>  
-            
-                <Text>Seleccione un numero</Text>
+        <TouchableWithoutFeedback onPress={() => {Keyboard.dismiss()}}>    
+            <View style={style.screen}> 
                 
-                <Input 
-                    style = {style.input} 
-                    blurOnSumbit 
-                    autoCapitalize = 'none' 
-                    autoCorrect = { false }
-                    keyboardType = "number-pad"
-                    maxLength={2}
-                    onChangeText={numberInputHandler}
-                    value={enteredValue}
-                    />
-               
-                 <View style={style.buttonContainer}>
+                <Text style={style.title}>Comenzar el juego</Text>
+
+                <Card style={style.inputContainer}>  
+                
+                    <Text>Seleccione un numero</Text>
                     
-                    <View style={style.button}>
-                     <Button title="Reiniciar" color={Colors.accent} onPress={() => {}} />
+                    <Input 
+                        style = {style.input} 
+                        blurOnSumbit 
+                        autoCapitalize = 'none' 
+                        autoCorrect = { false }
+                        keyboardType = "number-pad"
+                        maxLength={2}
+                        onChangeText={numberInputHandler}
+                        value={enteredValue}
+                        />
+                
+                    <View style={style.buttonContainer}>
+                        
+                        <View style={style.button}>
+                        <Button title="Reiniciar" color={Colors.accent} onPress={() => {}} />
+                        </View>
+
+                        <View style={style.button}>
+                        <Button title="Aceptar" color={Colors.primary} onPress={() => {}} />
+                        </View>
+
                     </View>
 
-                    <View style={style.button}>
-                    <Button title="Aceptar" color={Colors.primary} onPress={() => {}} />
-                    </View>
+                </Card>
 
-                </View>
-
-            </Card>
-
-        </View>
+            </View>
+        </TouchableWithoutFeedback>
     );
 };
 
