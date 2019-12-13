@@ -5,5 +5,6 @@
   "packagerPid": 14002,
   "expoServerNgrokUrl": "https://4r-h3a.anonymous.rn-game.exp.direct",
   "packagerNgrokUrl": "https://packager.4r-h3a.anonymous.rn-game.exp.direct",
-  "ngrokPid": 14028
+  "ngrokPid": 14028,
+  "webpackServerPort": 19006
 }
