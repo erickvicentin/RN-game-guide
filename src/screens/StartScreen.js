@@ -47,13 +47,11 @@ const StartScreen = props => {
     };
 
     return (
-        <TouchableWithoutFeedback onPress={() => {Keyboard.dismiss()}}>    
+        <TouchableWithoutFeedback onPress={() => {Keyboard.dismiss()}}>  
             <View style={style.screen}> 
-                
                 <Text style={style.title}>Comenzar el juego</Text>
 
-                <Card style={style.inputContainer}>  
-                
+                <Card style={style.inputContainer}>                 
                     <Text>Seleccione un numero</Text>
                     
                     <Input 
@@ -78,11 +76,11 @@ const StartScreen = props => {
                         </View>
 
                     </View>
-
                 </Card>
             {confirmedOutput}
             </View>
         </TouchableWithoutFeedback>
+    
     );
 };
 
