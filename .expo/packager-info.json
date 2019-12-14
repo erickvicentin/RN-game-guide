@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 9478,
-  "expoServerNgrokUrl": "https://4r-h3a.anonymous.rn-game.exp.direct",
-  "packagerNgrokUrl": "https://packager.4r-h3a.anonymous.rn-game.exp.direct",
-  "ngrokPid": 9544,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": 19006
 }
