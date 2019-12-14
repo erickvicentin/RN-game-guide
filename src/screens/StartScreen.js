@@ -42,7 +42,8 @@ const StartScreen = props => {
         <Card style={style.summaryContainer}>
             <Text>Seleccionaste el numero</Text> 
             <NumberContainer>{selectedNumber}</NumberContainer>
-            <Button title='Comenzar Juego' />
+            <Button title='Comenzar Juego' onPress={() => 
+                props.onStartGame(selectedNumber)} />
         </Card>
     };
 
@@ -68,19 +69,19 @@ const StartScreen = props => {
                     <View style={style.buttonContainer}>
                         
                         <View style={style.button}>
-                        <Button title="Reiniciar" color={Colors.accent} onPress={() => {resetInputHandler()}} />
+                        <Button title="Reiniciar" color={Colors.accent} onPress={
+                            () => {resetInputHandler()}} />
                         </View>
 
                         <View style={style.button}>
-                        <Button title="Aceptar" color={Colors.primary} onPress={() => {confirmInputHandler()}} />
+                        <Button title="Aceptar" color={Colors.primary} onPress={
+                            () => {confirmInputHandler()}} />
                         </View>
-
                     </View>
                 </Card>
             {confirmedOutput}
             </View>
         </TouchableWithoutFeedback>
-    
     );
 };
 
